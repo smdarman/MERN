@@ -24,11 +24,16 @@ class News extends Component {
   };
 
   render() {
-    var items = this.state.News.map(function (item, id) {
-      return <h3 key={id}>
-      {item.title} {item.description}
-
-      </h3>;
+    var items = this.state.News.map(function (item, i) {
+      return <div key={i} >
+        <h3 >
+         {item.title}
+        </h3>
+       <h2 >
+         {item.description}
+      </h2>
+      <img src={item.urlToImage} alt="" height="250" width="350" />
+        </div>
     });
     // var descs = this.state.News.map(function (desc, id) {
     //   return <h4 key={id}> {desc.description} </h4>;
