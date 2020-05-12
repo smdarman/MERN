@@ -13,6 +13,11 @@ class Home extends Component {
             My List
         </button>
       </Link>
+      <Link to={'./News'}>
+        <button variant="raised">
+            My News
+        </button>
+      </Link>
     </div>
     );
   }
