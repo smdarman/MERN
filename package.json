@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
 
     "heroku-postbuild": "cd home && npm install --only=dev && npm install && npm run build"
   },
