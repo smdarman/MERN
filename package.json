@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+    "engines": {
+    "node": "10.16.x"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+
+    "heroku-postbuild": "cd home && npm install --only=dev && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
